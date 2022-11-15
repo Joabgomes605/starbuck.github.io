@@ -92,7 +92,7 @@ header ul li a{
 .thumb{
     position: absolute;
     left: 50%;
-    bottom: -30px;
+    bottom: -50px;
     transform: translateX(-50%);
     display: flex;
 }

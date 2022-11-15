@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <title>☕ StarBucks ☕</title>
+    </head>
+
+    <body>
+        
+        <section>
+
+            <div class="circle"></div>
+
+            <header>
+                <a href="#" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
+                <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Menu</a></li>
+                     <li><a href="#">What's New</a></li>
+                     <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+
+            <div class="content">
+
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <span class="textoCor">Starbucks</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos molestias ducimus sint modi facere reiciendis suscipit blanditiis dicta, 
+                        recusandae tempora possimus optio voluptates aspernatur hic enim dolorum nemo nostrum!
+                    </p>
+                    <a href="#" class="saibaMais">Learn More</a>
+                </div>
+
+                <div class="imgBox">
+                    <img src="assets/img/img1.png" alt="" class="starbucks">
+                </div>
+
+                <ul class="thumb">
+                    <li><img src="assets/img/thumb1.png" alt="" onclick="imgSlider('../assets/img/img1.png'); changeCircleColor('#017143'); textColor('#017143'); buttonColor('#017143');"></li>
+                    <li><img src="assets/img/thumb2.png" alt="" onclick="imgSlider('../assets/img/img2.png'); changeCircleColor('#eb7495'); textColor('#eb7495'); buttonColor('#eb7495');"></li>
+                    <li><img src="assets/img/thumb3.png" alt="" onclick="imgSlider('../assets/img/img3.png'); changeCircleColor('#d752b1'); textColor('#d752b1'); buttonColor('#d752b1');"></li>
+                </ul>
+
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider (anything) {
+                document.querySelector('.starbucks').src = anything;
+            }
+            function changeCircleColor(color) {
+                const circle = document.querySelector('.circle ');
+                circle.style.background = color;
+            }
+            function textColor (color) {
+                const textColor = document.querySelector('.textoCor');
+                textColor.style.color = color;
+            }
+            function buttonColor (color) {
+                const btnColor = document.querySelector('.saibaMais');
+                btnColor.style.background = color;
+            }
+        </script>
+    </body>
+
+</html>
